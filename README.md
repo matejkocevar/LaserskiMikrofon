@@ -35,17 +35,20 @@ Predvajaj zvok pred snemanjem
 Filtri
 
 ##Težave
+
+######V nadeljevanju:
 Zakaj fototranzistor namesto fotoupora?
+
 Zakaj baterija namesto adapterja?
-nauk:
-direkten izhod na zvočnik ne bo dal pravih rezultatov, priklopi na računalnik.
-drama z ojačevalcem in novim vezjem.  
+
+direkten izhod na zvočnik ne bo dal pravih rezultatov, priklopi na računalnik
+
+drama z ojačevalcem in novim vezjem
+ 
 jakost laserja + odboj na steklu/cdju/zrcalni membrani
 
-
-
- _kaj je to + uvod: za kaj je primeren, za kaj ni. kaj vse je treba upoštevati pri 
- vzpostavitviji sistema_
+kaj je to + uvod: za kaj je primeren, za kaj ni. kaj vse je treba upoštevati pri 
+ vzpostavitviji sistema
  
  
  
