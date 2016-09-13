@@ -1,7 +1,7 @@
 # Laserski mikrofon
 Ko slišimo za laserski mikrofon, pogosto pomislimo na _tajne agente_ in _high-tech_ prisluškovalne naprave. Le te so navadno težko dostopna stvar, a laserski mikrofon ne spada v to kategorijo. Sestavimo ga lahko na vsaki mizi s spajkalnikom in osnovnimi elektronskimi komponentami.
 
-![alt text][uvod]
+![alt text](slike/uvod.png "Postavljen sistem laserskega mikrofona")
 
 ##Kako deluje?
 Najbolj očitna komponenta, ki jo potrebujemo, je **laser**. Tega bomo usmerili proti oddaljenemu objektu, ki je dober **odbojnik** svetlobe (zrcalo, okno, steklo na stenski sliki, ...) in laserski žarek pošlje nazaj v naš **sprejemnik**, ki svetlobo dekodira v zvok.
@@ -49,11 +49,3 @@ jakost laserja + odboj na steklu/cdju/zrcalni membrani
 
 kaj je to + uvod: za kaj je primeren, za kaj ni. kaj vse je treba upoštevati pri 
  vzpostavitviji sistema
- 
- 
- 
-
-
-
-
-[uvod]: slike/uvod.png "Postavljen sistem laserskega mikrofona"
