@@ -23,4 +23,9 @@ Za gradnjo vezja laserskega mikrofona potrebujemo naslednje dele:
 
 ## Stojalo
 
-##Težave
+## Audacity
+Prikaži Peak
+Predvajaj zvok pred snemanjem
+Filtri
+
+## Težave / zaključek
