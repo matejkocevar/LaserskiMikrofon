@@ -47,5 +47,4 @@ drama z ojačevalcem in novim vezjem
  
 jakost laserja + odboj na steklu/cdju/zrcalni membrani
 
-kaj je to + uvod: za kaj je primeren, za kaj ni. kaj vse je treba upoštevati pri 
- vzpostavitviji sistema
+kaj je to + uvod: za kaj je primeren, za kaj ni. kaj vse je treba upoštevati pri vzpostavitviji sistema
