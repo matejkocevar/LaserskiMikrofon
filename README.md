@@ -65,7 +65,7 @@ Ker vsak tresljaj pomeni motnjo, z vsakim premikom stojala pa tvegamo izgubo ali
 
 Na ta način pri nastavljanju potenciometra ne tresemo stojala, v primeru zibanja stojala pa se le-to hitreje umiri, saj je najvišji del mnogo lažji.
 
-Sprejemni del, viden na spodnji sliki desno, je sestavljen iz kavnega lončka, ki zaradi svoje bele notranjosti pomaga usmeriti laser v njegovo sredino in iz črnega ročaja kemičnega svinčnika, ki zmanjšuje vstop svetlobe stropnih luči.
+Sprejemni del, viden na spodnji sliki desno, je sestavljen iz kavnega lončka, ki s svojo belo notranjostjo uporabniku pomaga usmeriti laser v sprejemnik na sredini in iz črnega ročaja kemičnega svinčnika, ki zmanjšuje vstop svetlobe stropnih luči.
 
 ![alt text](slike/stojalo.png "Stojalo in sprejemni del")
 
@@ -76,12 +76,14 @@ Laserski mikrofon najlažje uporabljamo v kombinaciji z računalnikom, saj nam o
 
 ######V nadeljevanju:
 Prikaži Peak
+
 Predvajaj zvok pred snemanjem
+
 Filtri
+
 ##Težave
 
 ######V nadeljevanju:
-
 Zakaj baterija namesto adapterja?
 
 direkten izhod na zvočnik ne bo dal pravih rezultatov, priklopi na računalnik
