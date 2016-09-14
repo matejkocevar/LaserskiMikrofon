@@ -5,12 +5,13 @@ Ko slišimo za laserski mikrofon, pogosto pomislimo na _tajne agente_ in _high-t
 
 ##Kako deluje?
 Najbolj očitna komponenta, ki jo potrebujemo, je **laser**. Tega bomo usmerili proti oddaljenemu objektu, ki je dober **odbojnik** svetlobe (zrcalo, okno, steklo na stenski sliki, ...) tako, da odbije laserski žarek nazaj v naš **dekoder**, ki svetlobo dekodira v zvok.
+
 Zvok, ki nastaja v bližini odbojnika, povzroči, da odbojnik rahlo vibrira, kar opazimo kot majhne spremembe pozicije odbitega laserskega žarka. Takšne spremembe pomenijo nihanje količine svetlobe v neki točki. Če na to točko postavimo prej omenjeni dekoder, bomo slišali zvok.
 
 ![alt text](slike/kakoDeluje.png "Shema postavitve")
 
 ## Laser
-Dokler bo naš laserski mikrofon deloval v optimalnih pogojih (tj. odbojnik je zrcalo, razdalje so kratke, imamo možnost zatemnitve prostora), pri izbiri laserja ni potrebno posebej komplicirati.
+Dokler bo naš laserski mikrofon deloval v optimalnih pogojih (tj. odbojnik je zrcalo, kratka razdalja, možnost zatemnitve prostora), pri izbiri laserja ni potrebno posebej komplicirati.
 
 Dovolj je že navaden rdeči laserski kazalnik ali cenen laserski modul, prirejen za Arduino. Pri slednjem sem naletel na težavo z napajanjem, saj je sčasoma izgubljal svojo svetilnost, kar sem do neke mere omilil tako, da sem ga namesto z napajalnikom napajal z Arduino-m.
 
@@ -24,15 +25,20 @@ Rdeči laser še vedno potrebujemo za umerjanje sistema, zato ga le dodamo novem
 Dekoderja zaradi spremembe laserja ni potrebno predelovati, saj zaznava IR svetlobo še malenkost boljše kot rdeči laser. Več o tem v poglavju o dekoderju.
 
 ## Odbojnik
-Odbojnik za testiranje naše naprave naredimo tako, da na membrano zvočnika prilepimo majhno zrcalo, če ga nimamo, bo zadostoval tudi košček starega CD-ja. V vsakem primeru mora biti zrcalo prilepljeno trdno na membrano, drugače pride do popačenja prejetega zvoka. Pri rezanju CD-ja je potrebno paziti, da folija ne odstopi od plastike, zato namesto škarij raje uporabimo električno žagico, ki plastiko med rezanjem malenkost stopi.
+Odbojnik za testiranje naše naprave naredimo tako, da na membrano zvočnika prilepimo majhno zrcalo, če ga nimamo, bo zadostoval tudi košček starega CD-ja. V vsakem primeru mora biti zrcalo prilepljeno trdno na membrano, drugače pride do popačenja prejetega zvoka. 
+
+Pri rezanju CD-ja je potrebno paziti, da folija ne odstopi od plastike, zato namesto škarij raje uporabimo električno žagico, ki plastiko med rezanjem malenkost stopi.
+
+Zvočniki, ki imajo celo ali del membrane že srebrne barve, se niso izkazali kot uporabni odbojniki sami po sebi, zato jih je še vedno treba opremiti z zrcalom. 
 
 ![alt text](slike/odbojnik.png "Prirejen odbojnik")
 
 ## Dekoder
 Čas za spajkanje! Seveda je pred tem pametno, da vezje najprej sestavimo na protoboard-u, ga testiramo in si zamislimo postavitev na stojalu. Ker imamo med testiranjem opravka z veliko žicami in ojačevalcem zvoka, ni nič nenavadnega, če naletimo na kakšne motnje ali celo na zvok kakšne FM radijske postaje.
-Če bo potenciometer postavljen ločeno od ostalega vezja, je zaradi zmanjšana motenj, priporočljivo, da skupaj povežemo upor R1 in kondenzator C1 in ju nato povežemo neposredno na potenciometer, tri žice, ki ga povezujejo z vezjem, pa ovijemo eno okrog druge, kot poleg protoboard-a in končnega vezja v ohišju prikazuje spodnja slika.
 
-![alt text](slike/dekodirnik.png "Prirejen odbojnik")
+Če bo potenciometer postavljen ločeno od ostalega vezja, je zaradi zmanjšana motenj priporočljivo, da skupaj povežemo upor R1 in kondenzator C1 in ju nato povežemo neposredno na potenciometer, tri žice, ki ga povezujejo z vezjem, pa ovijemo eno okrog druge, kot poleg protoboard-a in končnega vezja v ohišju prikazuje spodnja slika.
+
+![alt text](slike/dekodirnik.png "Dekodirnik na protoboard-u in v ohišju")
  
 ####Seznam delov
 - upori:
@@ -53,13 +59,25 @@ Odbojnik za testiranje naše naprave naredimo tako, da na membrano zvočnika pri
 ![alt text](slike/shema.png "Shema vezja dekoderja")
 
 ## Stojalo
-!!postavitev, le del žarka na senzor!!
+Stojalo za dekoder mora biti prilagodljivo po višini in naklonu, stabilno in trdne konstrukcije. Fotografsko stojalo ustreza vsem pogojem, a če ga nimamo pri roki, lahko sestavimo podobnega temu na spodnji sliki levo.
+
+Ker vsak tresljaj pomeni motnjo, z vsakim premikom stojala pa tvegamo izgubo ali slabši sprejem zvoka, se splača ločiti fototranzistor od ostalega vezja, le to postavimo nekam blizu tal.
+
+Na ta način pri nastavljanju potenciometra ne tresemo stojala, v primeru zibanja stojala pa se le-to hitreje umiri, saj je najvišji del mnogo lažji.
+
+Sprejemni del, viden na spodnji sliki desno, je sestavljen iz kavnega lončka, ki zaradi svoje bele notranjosti pomaga usmeriti laser v njegovo sredino in iz črnega ročaja kemičnega svinčnika, ki zmanjšuje vstop svetlobe stropnih luči.
+
+![alt text](slike/stojalo.png "Stojalo in sprejemni del")
 
 ## Audacity
+Laserski mikrofon najlažje uporabljamo v kombinaciji z računalnikom, saj nam omogoča vizualni prikaz, shranjevanje in procesiranje zvoka. Uporabili bomo brezplačen program [Audacity](http://www.audacityteam.org/ "Audacity-jeva domača stran")
+
+![alt text](slike/audacity.png "Zajet zvok v programu Audacity")
+
+######V nadeljevanju:
 Prikaži Peak
 Predvajaj zvok pred snemanjem
 Filtri
-
 ##Težave
 
 ######V nadeljevanju:
