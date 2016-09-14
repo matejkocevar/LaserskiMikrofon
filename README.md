@@ -29,8 +29,10 @@ Odbojnik za testiranje naše naprave naredimo tako, da na membrano zvočnika pri
 ![alt text](slike/odbojnik.png "Prirejen odbojnik")
 
 ## Dekoder
-!!UVOD!!
-Vezje je pametno najprej sestaviti na protoboard-u, ga nato testirati, si zamisliti postavitev na stojalu in šele nato prispajkati
+Čas za spajkanje! Seveda je pred tem pametno, da vezje najprej sestavimo na protoboard-u, ga testiramo in si zamislimo postavitev na stojalu. Ker imamo med testiranjem opravka z veliko žicami in ojačevalcem zvoka, ni nič nenavadnega, če naletimo na kakšne motnje ali celo na zvok kakšne FM radijske postaje.
+Če bo potenciometer postavljen ločeno od ostalega vezja, je zaradi zmanjšana motenj, priporočljivo, da skupaj povežemo upor R1 in kondenzator C1 in ju nato povežemo neposredno na potenciometer, tri žice, ki ga povezujejo z vezjem, pa ovijemo eno okrog druge, kot poleg protoboard-a in končnega vezja v ohišju prikazuje spodnja slika.
+
+![alt text](slike/dekodirnik.png "Prirejen odbojnik")
  
 ####Seznam delov
 - upori:
