@@ -6,7 +6,7 @@ Ko slišimo za laserski mikrofon, pogosto pomislimo na _tajne agente_ in _high-t
 ##Kako deluje?
 Najbolj očitna komponenta, ki jo potrebujemo, je **laser**. Tega bomo usmerili proti oddaljenemu objektu, ki je dober **odbojnik** svetlobe (zrcalo, okno, steklo na stenski sliki, ...) tako, da odbije laserski žarek nazaj v naš **dekoder**, ki svetlobo dekodira v zvok.
 Zvok, ki nastaja v bližini odbojnika, povzroči, da odbojnik rahlo vibrira, kar opazimo kot majhne spremembe pozicije odbitega laserskega žarka. Takšne spremembe pomenijo nihanje količine svetlobe v neki točki. Če na to točko postavimo prej omenjeni dekoder, bomo slišali zvok.
-![alt text](http://www.detective-store.com/5721-thickbox_default/laser-listening-device-spectra-laser-microphone-m.jpg "Shema postavitve")
+![alt text](slike/kakoDeluje.jpg "Shema postavitve")
 
 
 ## Dekoder
