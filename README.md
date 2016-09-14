@@ -14,6 +14,8 @@ Dokler bo naš laserski mikrofon deloval v optimalnih pogojih (tj. odbojnik je z
 
 Dovolj je že navaden rdeči laserski kazalnik ali cenen laserski modul, prirejen za Arduino. Pri slednjem sem naletel na težavo z napajanjem, saj je sčasoma izgubljal svojo svetilnost, kar sem do neke mere omilil tako, da sem ga namesto z napajalnikom napajal z Arduino-m.
 
+Laser postavimo tako, da ga bomo kasneje lahko premikali. To nam bo prišlo prav kasneje, ko bomo laser usmerjali v odbojnik.
+
 ####Izboljšava
 Seveda pravi vohuni ne bodo zadovoljni s prisluškovalno napravo, ki okno tarče osvetli z rdečo piko. V tem primeru je smiselno uporabiti IR laser, katerega svetloba je nevidna za človeško oko.
 
