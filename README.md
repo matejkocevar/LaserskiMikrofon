@@ -22,7 +22,7 @@ Rdeči laser še vedno potrebujemo za umerjanje sistema, zato ga le dodamo novem
 Dekoderja zaradi spremembe laserja ni potrebno predelovati, saj zaznava IR svetlobo še malenkost boljše kot rdeči laser. Več o tem v poglavju o dekoderju.
 
 ## Odbojnik
-Odbojnik za testiranje naše naprave naredimo tako, da na membrano zvočnika prilepimo majhno zrcalo, če pa ga nimamo, bo zadostoval tudi košček starega CD-ja. Tukaj je potrebno paziti, da med rezanjem CD-ja folija ne odstopi od plastike, zato namesto škarij raje uporabimo električno žagico, ki plastiko med rezanjem malenkost stopi.
+Odbojnik za testiranje naše naprave naredimo tako, da na membrano zvočnika prilepimo majhno zrcalo, če ga nimamo, bo zadostoval tudi košček starega CD-ja. V vsakem primeru mora biti zrcalo prilepljeno trdno na membrano, drugače pride do popačenja prejetega zvoka. Pri rezanju CD-ja je potrebno paziti, da folija ne odstopi od plastike, zato namesto škarij raje uporabimo električno žagico, ki plastiko med rezanjem malenkost stopi.
 
 ![alt text](slike/odbojnik.png "Prirejen odbojnik")
 
