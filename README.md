@@ -8,9 +8,19 @@ Najbolj očitna komponenta, ki jo potrebujemo, je **laser**. Tega bomo usmerili 
 Zvok, ki nastaja v bližini odbojnika, povzroči, da odbojnik rahlo vibrira, kar opazimo kot majhne spremembe pozicije odbitega laserskega žarka. Takšne spremembe pomenijo nihanje količine svetlobe v neki točki. Če na to točko postavimo prej omenjeni dekoder, bomo slišali zvok.
 ![alt text](slike/kakoDeluje.png "Shema postavitve")
 
+## Laser
+Dokler bo naš laserski mikrofon deloval v optimalnih pogojih (tj. odbojnik je zrcalo, razdalje so kratke, imamo možnost zatemnitve prostora), pri izbiri laserja ni potrebno posebej komplicirati. Dovolj je že navaden rdeči laserski kazalnik ali cenen laserski modul, prirejen za Arduino. Pri slednjem sem naletel na težavo z napajanjem, saj je sčasoma izgubljal svojo svetilnost, kar sem do neke mere omilil s priklopom na Arduino.
 
+######Izboljšava
+Seveda pravi vohuni ne bodo zadovoljni s prisluškovalno napravo, ki okno tarče osvetli z rdečo piko. V tem primeru je smiselno uporabiti IR laser, katerega svetloba je nevidna za človeško oko.
+Rdeči laser še vedno potrebujemo za umerjanje sistema, zato ga le dodamo novemu IR laserju, pri čemer morata žarka obeh biti čimbolj vzporedna.
+Dekoderja zaradi spremembe laserja ni potrebno predelovati, saj zaznava IR svetlobo še malenkost boljše kot rdeči laser. Več o tem v poglavju o dekoderju.
+
+## Odbojnik
 ## Dekoder
-Za gradnjo potrebujemo naslednje dele:
+!!!Pa se lotimo dela. Najprej bomo naredili dekoder.!!! Vezje je pametno najprej sestaviti na breadbordu, ga nato testirati, si zamisliti postavitev na stojalu in šele nato prispajkati
+ 
+####Seznam delov
 - upori:
    * 1kΩ
    * 10kΩ
@@ -25,9 +35,8 @@ Za gradnjo potrebujemo naslednje dele:
 - 9V baterija
 - stikalo
 
-## Odbojnik
-
-## Laser
+####Shema
+![alt text](http://www.lucidscience.com/projects/Laser%20Spy%20Device/21.jpg "Shema vezja dekoderja")
 
 ## Stojalo
 POSTAVITEV!
@@ -40,7 +49,6 @@ Filtri
 ##Težave
 
 ######V nadeljevanju:
-Zakaj fototranzistor namesto fotoupora?
 
 Zakaj baterija namesto adapterja?
 
