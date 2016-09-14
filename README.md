@@ -6,22 +6,22 @@ Ko slišimo za laserski mikrofon, pogosto pomislimo na _tajne agente_ in _high-t
 ##Kako deluje?
 Najbolj očitna komponenta, ki jo potrebujemo, je **laser**. Tega bomo usmerili proti oddaljenemu objektu, ki je dober **odbojnik** svetlobe (zrcalo, okno, steklo na stenski sliki, ...) tako, da odbije laserski žarek nazaj v naš **dekoder**, ki svetlobo dekodira v zvok.
 Zvok, ki nastaja v bližini odbojnika, povzroči, da odbojnik rahlo vibrira, kar opazimo kot majhne spremembe pozicije odbitega laserskega žarka. Takšne spremembe pomenijo nihanje količine svetlobe v neki točki. Če na to točko postavimo prej omenjeni dekoder, bomo slišali zvok.
-![alt text](slike/kakoDeluje.jpg "Shema postavitve")
+![alt text](slike/kakoDeluje.png "Shema postavitve")
 
 
 ## Dekoder
 Za gradnjo potrebujemo naslednje dele:
 - upori:
-   * 1 kΩ
-   * 10 kΩ
+   * 1kΩ
+   * 10kΩ
 - kondenzatorji:
-   * 0.01 μF
-   * 10 μF
-   * 470 μF
+   * 0.01μF
+   * 10μF
+   * 470μF
 - potenciometer: 50 ali 100 kΩ
 - fototranzistor: katerikoli NPN s prozornnim ohišjem
-- integrirani ojačevalec: LM386
-- banana za slušalke
+- ojačevalec zvoka: LM386 ali podoben čip
+- 3,5mm audio jack socket za slušalke
 - 9V baterija
 - stikalo
 
