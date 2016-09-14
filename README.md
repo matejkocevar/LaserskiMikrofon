@@ -46,7 +46,7 @@ Vezje je pametno najprej sestaviti na protoboard-u, ga nato testirati, si zamisl
 - stikalo
 
 ####Shema
-![alt text](http://www.lucidscience.com/projects/Laser%20Spy%20Device/21.jpg "Shema vezja dekoderja")
+![alt text](slike/shema.png "Shema vezja dekoderja")
 
 ## Stojalo
 !!postavitev, le del žarka na senzor!!
