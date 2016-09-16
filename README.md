@@ -52,7 +52,7 @@ Zvočniki, ki imajo celo ali del membrane že srebrne barve, se niso izkazali ko
 - fototranzistor: katerikoli NPN s prozornnim ohišjem
 - ojačevalec zvoka: LM386 ali podoben čip
 - 3,5mm audio jack socket za slušalke
-- 9V baterija
+- baterija od 3V do 9V
 - stikalo
 
 ####Shema
@@ -70,8 +70,6 @@ Sprejemni del, viden na spodnji sliki desno, je sestavljen iz kavnega lončka, k
 ![alt text](slike/stojalo.png "Stojalo in sprejemni del")
 
 ##Zajem zvoka
-!!!postavitev!!!
-
 Laserski mikrofon najlažje uporabljamo v kombinaciji z računalnikom, saj nam omogoča vizualni prikaz, shranjevanje in procesiranje zvoka. Uporabili bomo brezplačen program [Audacity](http://www.audacityteam.org/ "Audacity-jeva domača stran")
 
 Dekoder povežemo z računalnikom s _3,5mm male to male audio_ kablom, ki ga priklopimo v _Line In_ vhod.
@@ -95,17 +93,19 @@ V veliko pomoč nam bo funkcija Pokaži rezanje, ki jo vklopimo z klikom na `Pog
 
 ####Filtri
 
+####Pravilna postavitev sistema
+
+
 ![alt text](slike/audacity.png "Zajet zvok v programu Audacity")
 
 ##Težave
+Pri gradnji sem naletel na mnoge težave, ki so opisane tukaj, skupaj z njihovimi rešitvami.
 
-######V nadeljevanju:
-Zakaj baterija namesto adapterja?
+####Brum
+Zvok, ki ga tvori dekodirnik, navadno ni nikoli čisto brez bruma (brnenja v ozadju). Če za napajanje uporabimo napajalnik, ki je priklučen v 220V vtičnico, opazimo, da na zvok vplivajo naprave, ki so priklučene v vtičnice v bližini. 
+Najenostavnejša rešitev je ta, da napajalnik zamenjamo z ustrezno baterijo. Tako je sistem bolj mobilen in neodvisen od električnih naprav v okolici.
 
-direkten izhod na zvočnik ne bo dal pravih rezultatov, priklopi na računalnik
+Opazil sem tudi, da brum prav tako povzročajo napetosti, višje od 3V. Ko sem vzporedno z vezjem vezal LED diodo z ustreznim uporom, se je stanje opazno popravilo.
 
-drama z ojačevalcem in novim vezjem
- 
-jakost laserja + odboj na steklu/cdju/zrcalni membrani
-
-kaj je to + uvod: za kaj je primeren, za kaj ni. kaj vse je treba upoštevati pri vzpostavitviji sistema
+####Ali moje vezje sploh deluje?!
+Na začetku gradnje dekoderja sem vezje testiral z zvočnikom namesto z računalnikom. To se je izkazalo za veliko napako, saj je bil zvok zaradi neoptimalne postavitve prešibek, da bi ga lahko slišal na zvočniku in sem zato porabil kar nekaj časa za iskanje neobstoječe napake v vezju. Računalnik je zato veliko boljša izbira, saj z grafično ponazoritvijo zvoka zlahka opazimo razliko med tišino in zvokom.
