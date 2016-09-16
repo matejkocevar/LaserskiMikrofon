@@ -99,7 +99,7 @@ V veliko pomoč nam bo funkcija Pokaži rezanje, ki jo vklopimo z klikom na `Pog
 ![alt text](slike/audacity.png "Zajet zvok v programu Audacity")
 
 ##Težave
-Pri gradnji sem naletel na mnoge težave, ki so opisane tukaj, skupaj z njihovimi rešitvami.
+Pri gradnji sem naletel na mnoge težave, nekaterih še nisem omenil, zato so opisane tukaj, skupaj z njihovimi rešitvami.
 
 ####Brum
 Zvok, ki ga tvori dekodirnik, navadno ni nikoli čisto brez bruma (brnenja v ozadju). Če za napajanje uporabimo napajalnik, ki je priklučen v 220V vtičnico, opazimo, da na zvok vplivajo naprave, ki so priklučene v vtičnice v bližini. 
