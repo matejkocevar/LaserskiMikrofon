@@ -69,17 +69,33 @@ Sprejemni del, viden na spodnji sliki desno, je sestavljen iz kavnega lončka, k
 
 ![alt text](slike/stojalo.png "Stojalo in sprejemni del")
 
-## Audacity
+##Zajem zvoka
+!!!postavitev!!!
+
 Laserski mikrofon najlažje uporabljamo v kombinaciji z računalnikom, saj nam omogoča vizualni prikaz, shranjevanje in procesiranje zvoka. Uporabili bomo brezplačen program [Audacity](http://www.audacityteam.org/ "Audacity-jeva domača stran")
 
+Dekoder povežemo z računalnikom s _3,5mm male to male audio_ kablom, ki ga priklopimo v _Line In_ vhod.
+
+####Prvi koraki
+Uporaba programa je sila preprosta. Pred uporabo se prepričamo, da imamo izbran pravi vhod (Line In) in izhod (privzeto) zvoka, preverimo, da sta jakosti snemanja in predvajanja za začetek nastavljeni na maksimum in že lahko pritisnemo rdeč gumb in naredimo svoj prvi posnetek.
+
+Zvočno sled posnetka lahko povečamo in prilagodimo oknu z ukazoma
+`Pogled -> Prilagodi oknu (Ctrl + F)` in 
+`Pogled -> Prilagodi navpično (Ctrl + Shift + F)`.
+
+####Opazovanje
+Ta funkcija nam omogoča poslušanje dekodiranega zvoka v realnem času. To nam pomaga pri nastavljanju celotnega sistema, saj ga opravljamo s poiskušanjem. 
+
+Vklopimo jo s klikom na tisto ikono mikrofona, ki ima puščico in izberemo `Začni opazovanje (Start Monitoring)`.
+
+####Določanje glasnosti snemanja
+Pri poslušanju zajetega zvoka bomo po vsej verjetnosti opazili, da le ta na nekaterih mestih hrešči. Proti temu se borimo z nastavljanjem glasnosti snemanja, kar storimo s premikanjem drsnika pri ikoni mikrofona skrajno levo v orodni vrstici.
+
+V veliko pomoč nam bo funkcija Pokaži rezanje, ki jo vklopimo z klikom na `Pogled -> Pokaži rezanje (View -> Show Clipping)`. Sedaj imamo na sledi z rdečo barvo označena mesta, kjer bomo slišali hreščeč zvok.
+
+####Filtri
+
 ![alt text](slike/audacity.png "Zajet zvok v programu Audacity")
-
-######V nadeljevanju:
-Prikaži Peak
-
-Predvajaj zvok pred snemanjem
-
-Filtri
 
 ##Težave
 
