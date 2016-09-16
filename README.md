@@ -8,6 +8,9 @@ Najbolj očitna komponenta, ki jo potrebujemo, je **laser**. Tega bomo usmerili 
 
 Zvok, ki nastaja v bližini odbojnika, povzroči, da odbojnik rahlo vibrira, kar opazimo kot majhne spremembe pozicije odbitega laserskega žarka. Takšne spremembe pomenijo nihanje količine svetlobe v neki točki. Če na to točko postavimo prej omenjeni dekoder, bomo slišali zvok.
 
+####Uporabnost v praksi
+[//]: # (TODO: kaj je to + uvod: za kaj je primeren, za kaj ni. kaj vse je treba upoštevati pri vzpostavitviji sistema, bin laden)
+
 ![alt text](slike/kakoDeluje.png "Shema postavitve")
 
 ## Laser
