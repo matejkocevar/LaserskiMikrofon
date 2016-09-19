@@ -128,6 +128,8 @@ Najenostavnejša rešitev je ta, da napajalnik zamenjamo z ustrezno baterijo. Ta
 Opazil sem tudi, da brum prav tako povzročajo napetosti, višje od 3V. Ko sem vzporedno z vezjem vezal navadno LED diodo z ustreznim uporom, se je stanje opazno popravilo.
 
 ##Rezultati
+Prikazana sta dva posnetka z različnima kvalitetama. Prvi ima zelo čist in razločen govor, drugi pa je bolj zamolkel, kar je navadno rezultat slabe postavitve stojala.
+
 [![Povezava na zvok](slike/val202.png)](https://clyp.it/vwuxnkh4) Izsek iz radia Val 202
 
 [![Povezava na zvok](slike/godler.png)](https://clyp.it/1ghn5oa5) Izsek iz oddaje Ta teden z Juretom Godlerjem
