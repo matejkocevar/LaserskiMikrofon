@@ -80,6 +80,14 @@ Sprejemni del, viden na spodnji sliki desno, je sestavljen iz kavnega lončka, k
 
 ![alt text](slike/stojalo.png "Stojalo in sprejemni del")
 
+##Postavitev sistema
+TODO
+odmik centra žarka od sprejemnika
+
+As the laser beam travels further, the beam spread becomes greater. Some laser pointers have very cheap plastic collimating lenses and will end up spreading the beam so wide that it will cover your entire wall by the time it bounces of a window across the street. For this reason, a decent laser module with an adjustable lens will always be better for long range operation. Of course, you only need to catch the very edge of the return beam, and as long as it strikes the photosensor, there will be  sound. Sometimes, the dull, spread out beam gave me much better results than a highly focused point.
+
+For alignment, I usually tape a paper target on the wall behind the area where I will place the receiver so that I can carefully adjust the laser beam tripod while looking at the wall, rather than waiting to catch the return beam in my eyes. A 5mw laser will not have very much focused intensity by the time it travels across a street and back, but that does not mean you can ignore laser safety. This target is also the only way to verify the alignment of an infrared laser if you are using one because you will need to view the laser spot using a camcorder as the human eyes cannot see infrared light. I do all targeting using the visible red beam and then switch to the infrared beam once I am near the target zone. From that point the fine tuning is done looking through a camcorder viewfinder or security camera on a monitor. This makes alignment a tedious chore!
+
 ##Zajem zvoka
 Laserski mikrofon najlažje uporabljamo v kombinaciji z računalnikom, saj nam omogoča vizualni prikaz, shranjevanje in procesiranje zvoka. Uporabili bomo brezplačen program [Audacity](http://www.audacityteam.org/ "Audacity-jeva domača stran")
 
@@ -102,16 +110,6 @@ Pri poslušanju zajetega zvoka bomo po vsej verjetnosti opazili, da le ta na nek
 
 V veliko pomoč nam bo funkcija Pokaži rezanje, ki jo vklopimo z klikom na `Pogled -> Pokaži rezanje (View -> Show Clipping)`. Sedaj imamo na sledi z rdečo barvo označena mesta, kjer bomo slišali hreščeč zvok.
 
-####Filtri
-TODO
-
-####Pravilna postavitev sistema
-TODO
-odmik centra žarka od sprejemnika
-
-As the laser beam travels further, the beam spread becomes greater. Some laser pointers have very cheap plastic collimating lenses and will end up spreading the beam so wide that it will cover your entire wall by the time it bounces of a window across the street. For this reason, a decent laser module with an adjustable lens will always be better for long range operation. Of course, you only need to catch the very edge of the return beam, and as long as it strikes the photosensor, there will be sound. Sometimes, the dull, spread out beam gave me much better results than a highly focused point.
-
-For alignment, I usually tape a paper target on the wall behind the area where I will place the receiver so that I can carefully adjust the laser beam tripod while looking at the wall, rather than waiting to catch the return beam in my eyes. A 5mw laser will not have very much focused intensity by the time it travels across a street and back, but that does not mean you can ignore laser safety. This target is also the only way to verify the alignment of an infrared laser if you are using one because you will need to view the laser spot using a camcorder as the human eyes cannot see infrared light. I do all targeting using the visible red beam and then switch to the infrared beam once I am near the target zone. From that point the fine tuning is done looking through a camcorder viewfinder or security camera on a monitor. This makes alignment a tedious chore!
 
 ![alt text](slike/audacity.png "Zajet zvok v programu Audacity")
 
@@ -128,4 +126,8 @@ Najenostavnejša rešitev je ta, da napajalnik zamenjamo z ustrezno baterijo. Ta
 Opazil sem tudi, da brum prav tako povzročajo napetosti, višje od 3V. Ko sem vzporedno z vezjem vezal navadno LED diodo z ustreznim uporom, se je stanje opazno popravilo.
 
 ##Rezultati
-TODO
+[![Povezava na zvok](slike/val202.png)](https://clyp.it/vwuxnkh4) Izsek iz radia Val 202
+
+[![Izsek iz radia Val 202](slike/val202.png)](zvoki/val202.mp3) Izsek iz radia Val 202
+
+[![Povezava na zvok](slike/val202.png)](zvoki/godler.mp3) Izsek iz oddaje Ta teden z Juretom Godlerjem
