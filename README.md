@@ -3,21 +3,22 @@ Ko slišimo za laserski mikrofon, pogosto pomislimo na _tajne agente_ in _high-t
 
 ![alt text](slike/uvod.png "Postavljen sistem laserskega mikrofona")
 
+
 ##Kako deluje?
 Najbolj očitna komponenta, ki jo potrebujemo, je **laser**. Tega bomo usmerili proti oddaljenemu objektu, ki je dober **odbojnik** svetlobe (zrcalo, okno, steklo na stenski sliki, ...) tako, da odbije laserski žarek nazaj v naš **dekoder**, ki svetlobo dekodira v zvok.
 
 Zvok, ki nastaja v bližini odbojnika, povzroči, da odbojnik rahlo vibrira, kar opazimo kot majhne spremembe pozicije odbitega laserskega žarka. Takšne spremembe pomenijo nihanje količine svetlobe v neki točki. Če na to točko postavimo prej omenjeni dekoder, bomo slišali zvok.
 
 ####Uporabnost v praksi
-Laserski mikrofon se uporablja predvsem za prisluškovanje v zaprtih prostorih z oknom. Poskusi v teh navodilih so izvedeni v optimalnih pogojih, v pravem svetu pa gre lahko marsikaj narobe, zato je takrat postavitev sistema veliko težje izvedljiva. 
+Laserski mikrofon se uporablja predvsem za prisluškovanje v zaprtih prostorih z oknom. Poskusi v teh navodilih so izvedeni v optimalnih pogojih, omenjenih v naslednjem poglavju, v pravem svetu pa gre lahko marsikaj narobe, zato je takrat postavitev sistema veliko težje izvedljiva. 
 
-Prisluškovanje zgradbi čez cesto zahteva veliko večjo natančnost pri nastavljanju pozicije laserskega žarka in dekoderja. Paziti moramo, da žarek pada na okno čim bližje pravemu kotu, kar pomeni, da moramo biti na enaki višini, kot je okno naše tarče. Pogovor mora biti dovolj glasen, da povzroči vibracijo na oknu. Okna, ki so iz več plasti in napolnjena s plinom, še dodano zmanjšujejo našo uspešnost.
+Prisluškovanje v zgradbi čez cesto zahteva veliko večjo natančnost pri nastavljanju pozicije laserskega žarka in dekoderja. Paziti moramo, da žarek pada na okno čim bližje pravemu kotu, kar pomeni, da moramo biti na enaki višini, kot je okno naše tarče. Pogovor mora biti dovolj glasen, da povzroči vibracijo na oknu. Okna, ki so iz več plasti in napolnjena s plinom, še dodano zmanjšujejo našo uspešnost.
 
-Laserski mikrofon 
-[naj bi uporabili](http://www.npr.org/2011/05/04/135995089/cia-used-satellites-to-prep-for-bin-laden-raid "Povezava na radio, kjer je opisano prisluškovanje Bin ladnu z laserskim mikrofonom")
-v kombinaciji z droni, sateliti in ostalimi napravami za identifikacijo Osame Bin Ladna in njegovih sodelavcev v skrivališču v kraju Abbottabad, Pakistan.
+V kombinaciji z droni, sateliti in ostalimi napravami 
+[naj bi uporabili](http://www.npr.org/2011/05/04/135995089/cia-used-satellites-to-prep-for-bin-laden-raid "Povezava na starn NPR, kjer je opisano prisluškovanje Bin ladnu z laserskim mikrofonom") laserski mikrofon za identifikacijo Osame Bin Ladna in njegovih sodelavcev v skrivališču v kraju Abbottabad, Pakistan.
 
 ![alt text](slike/kakoDeluje.png "Shema postavitve")
+
 
 ## Laser
 Dokler bo naš laserski mikrofon deloval v optimalnih pogojih (tj. odbojnik je zrcalo, kratka razdalja, možnost zatemnitve prostora), pri izbiri laserja ni potrebno posebej komplicirati.
@@ -29,14 +30,14 @@ Laser postavimo tako, da ga bomo kasneje lahko premikali. To nam bo prišlo prav
 ####Izboljšava
 Seveda pravi vohuni ne bodo zadovoljni s prisluškovalno napravo, ki okno tarče osvetli z rdečo piko. V tem primeru je smiselno uporabiti IR laser, katerega svetloba je nevidna za človeško oko.
 
-Rdeči laser še vedno potrebujemo za umerjanje sistema, zato ga le dodamo novemu IR laserju, pri čemer morata žarka obeh biti čimbolj vzporedna.
+Rdeči laser še vedno potrebujemo za vizualno nastavavljanje sistema, zato ga le dodamo novemu IR laserju, pri čemer morata žarka obeh biti čimbolj vzporedna.
 
 Dekoderja zaradi spremembe laserja ni potrebno predelovati, saj zaznava IR svetlobo še malenkost boljše kot rdeči laser.
 
-Če se odločis za gradnjo izboljšane verzije z IR laserjem, priporočam branje [te strani](http://www.lucidscience.com/pro-laser%20spy%20device-1.aspx "Povezava na LucidScience").
+Če se odločis za gradnjo izboljšane verzije z IR laserjem, priporočam branje projekta na [LucidSicence](http://www.lucidscience.com/pro-laser%20spy%20device-1.aspx "Povezava na LucidScience").
 
 ## Odbojnik
-Odbojnik za testiranje naše naprave naredimo tako, da na membrano zvočnika prilepimo majhno zrcalo, če ga nimamo, bo zadostoval tudi košček starega CD-ja. V vsakem primeru mora biti zrcalo prilepljeno trdno na membrano, drugače pride do popačenja prejetega zvoka. 
+Odbojnik za testiranje naše naprave naredimo tako, da na membrano zvočnika prilepimo majhno zrcalo, če pa ga nimamo, bo zadostoval tudi košček starega CD-ja. V vsakem primeru mora biti zrcalo prilepljeno trdno na membrano, drugače pride do popačenja prejetega zvoka. 
 
 Pri rezanju CD-ja je potrebno paziti, da folija ne odstopi od plastike, zato namesto škarij raje uporabimo električno žagico, ki plastiko med rezanjem malenkost stopi.
 
@@ -44,8 +45,9 @@ Zvočniki, ki imajo celo ali del membrane že srebrne barve, se niso izkazali ko
 
 ![alt text](slike/odbojnik.png "Prirejen odbojnik")
 
+
 ## Dekoder
-Čas za spajkanje! Seveda je pred tem pametno, da vezje najprej sestavimo na protoboard-u, ga testiramo in si zamislimo postavitev na stojalu. Ker imamo med testiranjem opravka z veliko žicami in ojačevalcem zvoka, ni nič nenavadnega, če naletimo na kakšne motnje ali celo na zvok kakšne FM radijske postaje.
+Čas za spajkanje! Seveda je pred tem pametno, da vezje najprej sestavimo na protoboard-u, ga testiramo in si zamislimo postavitev na stojalu. Ker imamo med testiranjem opravka z veliko žicami in ojačevalcem zvoka, ni nič nenavadnega, če naletimo na motnje ali celo na zvok kakšne FM radijske postaje.
 
 Če bo potenciometer postavljen ločeno od ostalega vezja, je zaradi zmanjšana motenj priporočljivo, da skupaj povežemo upor R1 in kondenzator C1 in ju nato povežemo neposredno na potenciometer, tri žice, ki ga povezujejo z vezjem, pa ovijemo eno okrog druge, kot poleg protoboard-a in končnega vezja v ohišju prikazuje spodnja slika.
 
@@ -53,15 +55,15 @@ Zvočniki, ki imajo celo ali del membrane že srebrne barve, se niso izkazali ko
  
 ####Seznam delov
 - upori:
-   * 1kΩ
-   * 10kΩ
+   * [R1] 1kΩ 
+   * [R2] 10kΩ 
 - kondenzatorji:
-   * 0.01μF
-   * 10μF
-   * 470μF
-- potenciometer: 50 ali 100 kΩ
-- fototranzistor: katerikoli NPN s prozornnim ohišjem
-- ojačevalec zvoka: LM386 ali podoben čip
+   * [C1] 0.01μF
+   * [C2] 10μF
+   * [C3] 470μF
+- potenciometer: [VR1] od 50 do 100kΩ
+- fototranzistor: [Q1] katerikoli NPN s prozornnim ohišjem, primernim za vidno in IR svetlobo, (na videz močno spominja na LED diodo)
+- ojačevalec zvoka: [IC1] LM386 ali podoben čip
 - 3,5mm audio jack socket za slušalke
 - baterija od 3V do 9V
 - stikalo
@@ -79,7 +81,6 @@ Na ta način pri nastavljanju potenciometra ne tresemo stojala, v primeru zibanj
 Sprejemni del, viden na spodnji sliki desno, je sestavljen iz kavnega lončka, ki s svojo belo notranjostjo uporabniku pomaga usmeriti laser v sprejemnik na sredini in iz črnega ročaja kemičnega svinčnika, ki zmanjšuje vstop svetlobe stropnih luči.
 
 ![alt text](slike/stojalo.png "Stojalo in sprejemni del")
-
 
 
 ##Zajem zvoka
