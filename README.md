@@ -80,13 +80,7 @@ Sprejemni del, viden na spodnji sliki desno, je sestavljen iz kavnega lončka, k
 
 ![alt text](slike/stojalo.png "Stojalo in sprejemni del")
 
-##Postavitev sistema
-TODO
-odmik centra žarka od sprejemnika
 
-As the laser beam travels further, the beam spread becomes greater. Some laser pointers have very cheap plastic collimating lenses and will end up spreading the beam so wide that it will cover your entire wall by the time it bounces of a window across the street. For this reason, a decent laser module with an adjustable lens will always be better for long range operation. Of course, you only need to catch the very edge of the return beam, and as long as it strikes the photosensor, there will be  sound. Sometimes, the dull, spread out beam gave me much better results than a highly focused point.
-
-For alignment, I usually tape a paper target on the wall behind the area where I will place the receiver so that I can carefully adjust the laser beam tripod while looking at the wall, rather than waiting to catch the return beam in my eyes. A 5mw laser will not have very much focused intensity by the time it travels across a street and back, but that does not mean you can ignore laser safety. This target is also the only way to verify the alignment of an infrared laser if you are using one because you will need to view the laser spot using a camcorder as the human eyes cannot see infrared light. I do all targeting using the visible red beam and then switch to the infrared beam once I am near the target zone. From that point the fine tuning is done looking through a camcorder viewfinder or security camera on a monitor. This makes alignment a tedious chore!
 
 ##Zajem zvoka
 Laserski mikrofon najlažje uporabljamo v kombinaciji z računalnikom, saj nam omogoča vizualni prikaz, shranjevanje in procesiranje zvoka. Uporabili bomo brezplačen program [Audacity](http://www.audacityteam.org/ "Audacity-jeva domača stran")
@@ -112,6 +106,13 @@ V veliko pomoč nam bo funkcija Pokaži rezanje, ki jo vklopimo z klikom na `Pog
 
 
 ![alt text](slike/audacity.png "Zajet zvok v programu Audacity")
+
+##Postavitev sistema
+Sistem nastavljamo tako, da sprožimo zvok na odbojniku, zaženemo laser in dekoder ter na računalniku spremljamo spremembe. Ker bi radi, da sta laser in dekoder dokaj blizu (znotraj iste sobe), moramo biti na enaki višini kot odbojnik in žarek iz laserja pošiljati pod pravim kotom.
+
+Z večanjem razdalje med odbojnikom in dekoderjem se veča tudi velikost radija žarka. Najboljši zvok bomo dobili, če dekoder postavimo tako, da bo meja (in ne sredina)laserskega žarka potekala čez senzor (foto-tranzistor) dekoderja.
+
+Vsak najmanjši premik laserja se zelo pozna pri odbitem žarku, zato moramo pri nastavljanju biti posebno pazljivi.
 
 ##Težave
 Pri gradnji sem naletel na mnoge težave, nekaterih še nisem omenil, zato so opisane tukaj, skupaj z njihovimi rešitvami.
