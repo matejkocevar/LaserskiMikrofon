@@ -128,6 +128,4 @@ Opazil sem tudi, da brum prav tako povzročajo napetosti, višje od 3V. Ko sem v
 ##Rezultati
 [![Povezava na zvok](slike/val202.png)](https://clyp.it/vwuxnkh4) Izsek iz radia Val 202
 
-[![Izsek iz radia Val 202](slike/val202.png)](zvoki/val202.mp3) Izsek iz radia Val 202
-
-[![Povezava na zvok](slike/val202.png)](zvoki/godler.mp3) Izsek iz oddaje Ta teden z Juretom Godlerjem
+[![Povezava na zvok](slike/godler.png)](https://clyp.it/1ghn5oa5) Izsek iz oddaje Ta teden z Juretom Godlerjem
