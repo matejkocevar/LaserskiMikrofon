@@ -9,7 +9,13 @@ Najbolj očitna komponenta, ki jo potrebujemo, je **laser**. Tega bomo usmerili 
 Zvok, ki nastaja v bližini odbojnika, povzroči, da odbojnik rahlo vibrira, kar opazimo kot majhne spremembe pozicije odbitega laserskega žarka. Takšne spremembe pomenijo nihanje količine svetlobe v neki točki. Če na to točko postavimo prej omenjeni dekoder, bomo slišali zvok.
 
 ####Uporabnost v praksi
-[//]: # (TODO: kaj je to + uvod: za kaj je primeren, za kaj ni. kaj vse je treba upoštevati pri vzpostavitviji sistema, bin laden)
+Laserski mikrofon se uporablja predvsem za prisluškovanje v zaprtih prostorih z oknom. Poskusi v teh navodilih so izvedeni v optimalnih pogojih, v pravem svetu pa gre lahko marsikaj narobe, zato je takrat postavitev sistema veliko težje izvedljiva. 
+
+Prisluškovanje zgradbi čez cesto zahteva veliko večjo natančnost pri nastavljanju pozicije laserskega žarka in dekoderja. Paziti moramo, da žarek pada na okno čim bližje pravemu kotu, kar pomeni, da moramo biti na enaki višini, kot je okno naše tarče. Pogovor mora biti dovolj glasen, da povzroči vibracijo na oknu. Okna, ki so iz več plasti in napolnjena s plinom, še dodano zmanjšujejo našo uspešnost.
+
+Laserski mikrofon 
+[naj bi uporabili](http://www.npr.org/2011/05/04/135995089/cia-used-satellites-to-prep-for-bin-laden-raid "Povezava na radio, kjer je opisano prisluškovanje Bin ladnu z laserskim mikrofonom")
+v kombinaciji z droni, sateliti in ostalimi napravami za identifikacijo Osame Bin Ladna in njegovih sodelavcev v skrivališču v kraju Abbottabad, Pakistan.
 
 ![alt text](slike/kakoDeluje.png "Shema postavitve")
 
@@ -25,7 +31,9 @@ Seveda pravi vohuni ne bodo zadovoljni s prisluškovalno napravo, ki okno tarče
 
 Rdeči laser še vedno potrebujemo za umerjanje sistema, zato ga le dodamo novemu IR laserju, pri čemer morata žarka obeh biti čimbolj vzporedna.
 
-Dekoderja zaradi spremembe laserja ni potrebno predelovati, saj zaznava IR svetlobo še malenkost boljše kot rdeči laser. Več o tem v poglavju o dekoderju.
+Dekoderja zaradi spremembe laserja ni potrebno predelovati, saj zaznava IR svetlobo še malenkost boljše kot rdeči laser.
+
+Če se odločis za gradnjo izboljšane verzije z IR laserjem, priporočam branje [te strani](http://www.lucidscience.com/pro-laser%20spy%20device-1.aspx "Povezava na LucidScience").
 
 ## Odbojnik
 Odbojnik za testiranje naše naprave naredimo tako, da na membrano zvočnika prilepimo majhno zrcalo, če ga nimamo, bo zadostoval tudi košček starega CD-ja. V vsakem primeru mora biti zrcalo prilepljeno trdno na membrano, drugače pride do popačenja prejetega zvoka. 
@@ -90,25 +98,34 @@ Ta funkcija nam omogoča poslušanje dekodiranega zvoka v realnem času. To nam 
 Vklopimo jo s klikom na tisto ikono mikrofona, ki ima puščico in izberemo `Začni opazovanje (Start Monitoring)`.
 
 ####Določanje glasnosti snemanja
-Pri poslušanju zajetega zvoka bomo po vsej verjetnosti opazili, da le ta na nekaterih mestih hrešči. Proti temu se borimo z nastavljanjem glasnosti snemanja, kar storimo s premikanjem drsnika pri ikoni mikrofona skrajno levo v orodni vrstici.
+Pri poslušanju zajetega zvoka bomo po vsej verjetnosti opazili, da le ta na nekaterih mestih hrešči. Če vrtneje potenciometra na dekoderju ne pomaga, se lahko proti temu se borimo z nastavljanjem glasnosti snemanja, kar storimo s premikanjem drsnika pri ikoni mikrofona skrajno levo v orodni vrstici.
 
 V veliko pomoč nam bo funkcija Pokaži rezanje, ki jo vklopimo z klikom na `Pogled -> Pokaži rezanje (View -> Show Clipping)`. Sedaj imamo na sledi z rdečo barvo označena mesta, kjer bomo slišali hreščeč zvok.
 
 ####Filtri
+TODO
 
 ####Pravilna postavitev sistema
+TODO
+odmik centra žarka od sprejemnika
 
+As the laser beam travels further, the beam spread becomes greater. Some laser pointers have very cheap plastic collimating lenses and will end up spreading the beam so wide that it will cover your entire wall by the time it bounces of a window across the street. For this reason, a decent laser module with an adjustable lens will always be better for long range operation. Of course, you only need to catch the very edge of the return beam, and as long as it strikes the photosensor, there will be sound. Sometimes, the dull, spread out beam gave me much better results than a highly focused point.
+
+For alignment, I usually tape a paper target on the wall behind the area where I will place the receiver so that I can carefully adjust the laser beam tripod while looking at the wall, rather than waiting to catch the return beam in my eyes. A 5mw laser will not have very much focused intensity by the time it travels across a street and back, but that does not mean you can ignore laser safety. This target is also the only way to verify the alignment of an infrared laser if you are using one because you will need to view the laser spot using a camcorder as the human eyes cannot see infrared light. I do all targeting using the visible red beam and then switch to the infrared beam once I am near the target zone. From that point the fine tuning is done looking through a camcorder viewfinder or security camera on a monitor. This makes alignment a tedious chore!
 
 ![alt text](slike/audacity.png "Zajet zvok v programu Audacity")
 
 ##Težave
 Pri gradnji sem naletel na mnoge težave, nekaterih še nisem omenil, zato so opisane tukaj, skupaj z njihovimi rešitvami.
 
+####Ali moje vezje sploh deluje?!
+Na začetku gradnje dekoderja sem vezje testiral z zvočnikom namesto z računalnikom. To se je izkazalo za veliko napako, saj je bil zvok zaradi neoptimalne postavitve prešibek, da bi ga lahko slišal na zvočniku in sem zato porabil kar nekaj časa za iskanje neobstoječe napake v vezju. Računalnik je zato veliko boljša izbira, saj z grafično ponazoritvijo zvoka zlahka opazimo razliko med tišino in zvokom.
+
 ####Brum
 Zvok, ki ga tvori dekodirnik, navadno ni nikoli čisto brez bruma (brnenja v ozadju). Če za napajanje uporabimo napajalnik, ki je priklučen v 220V vtičnico, opazimo, da na zvok vplivajo naprave, ki so priklučene v vtičnice v bližini. 
 Najenostavnejša rešitev je ta, da napajalnik zamenjamo z ustrezno baterijo. Tako je sistem bolj mobilen in neodvisen od električnih naprav v okolici.
 
-Opazil sem tudi, da brum prav tako povzročajo napetosti, višje od 3V. Ko sem vzporedno z vezjem vezal LED diodo z ustreznim uporom, se je stanje opazno popravilo.
+Opazil sem tudi, da brum prav tako povzročajo napetosti, višje od 3V. Ko sem vzporedno z vezjem vezal navadno LED diodo z ustreznim uporom, se je stanje opazno popravilo.
 
-####Ali moje vezje sploh deluje?!
-Na začetku gradnje dekoderja sem vezje testiral z zvočnikom namesto z računalnikom. To se je izkazalo za veliko napako, saj je bil zvok zaradi neoptimalne postavitve prešibek, da bi ga lahko slišal na zvočniku in sem zato porabil kar nekaj časa za iskanje neobstoječe napake v vezju. Računalnik je zato veliko boljša izbira, saj z grafično ponazoritvijo zvoka zlahka opazimo razliko med tišino in zvokom.
+##Rezultati
+TODO
